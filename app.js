@@ -3,7 +3,9 @@
 
 // Add console.log() messages within your app to notify the user if they are correct. Before submitting, comment out (don’t delete) your console.log() messages and replace them with the alerts() to complete the project.
 
-var aboutMeNotYou = prompt('Hello!  You probably think this website is about you, don\'t you?');
+var userName = prompt('What\'s your name?');
+
+var aboutMeNotYou = prompt('Hello! ' + userName + '.' + ' You probably think this website is about you, don\'t you?');
 
 while (aboutMeNotYou.toLowerCase() === 'yes' ||aboutMeNotYou.toLowerCase() === 'y') {
   console.log('...don\'t you?');
@@ -63,12 +65,6 @@ if (myMajor.toLowerCase() === 'yes' || myMajor.toLowerCase() === 'y') {
   console.log('Oops, that\'s a glitch.');
   alert('Oops, that\'s a glitch.');
 }
-
-
-
-
-
-
 
 // As a user, I would like a personalized welcome message so that I feel like I am interacting with the site owner.
 
