@@ -1,3 +1,29 @@
+/* colors from https://color.adobe.com/create:
+#634AFF
+#D1DDE8
+#FAFFFE
+#50EB5E
+#C7FF1A
+ */
+
+body {
+  /* background-color: #FAFFFE; */
+  background-image: url(https://cdn.pixabay.com/photo/2017/02/21/05/15/seattle-2084693_1280.jpg);
+  font-family: system-ui;
+}
+
 h1 {
-  color: blueviolet;
+  color: #C7FF1A;
+  background-color: #634AFF;
+  padding: 0ex;
+  font-family: system-ui;
+}
+
+section {
+  background-color: rgba(250, 255, 255, 0.2);
+  padding: 3px;
+  width: 600px;
+  height: 250px;
+  overflow: scroll;
+  color: #140026;
 }

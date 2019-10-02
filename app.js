@@ -18,7 +18,7 @@ var aboutMeNotYou = prompt('Hello! ' + userName + '.' + ' You probably think thi
 
 while (aboutMeNotYou.toLowerCase() === 'yes' ||aboutMeNotYou.toLowerCase() === 'y') {
   // console.log('...don\'t you?');
-  aboutMeNotYou = prompt('...don\'t you?');
+  aboutMeNotYou = prompt('Try again!');
 }
 
 if (aboutMeNotYou.toLowerCase() === 'no' || aboutMeNotYou.toLowerCase() === 'n') {
