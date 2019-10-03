@@ -194,3 +194,11 @@ function question7() {
 // console.log(score);
 alert('Congrats! You got ' + (Number(userAnswers[0]) + Number(userAnswers[1]) + Number(userAnswers[2]) + Number(userAnswers[3]) + Number(userAnswers[4]) + Number(userAnswers[5]) + Number(userAnswers[6])) + ' out of ' + userAnswers.length);
 alert('Goodbye ' + userName + '!');
+
+question1();
+question2();
+question3();
+question4();
+question5();
+question6();
+question7();
