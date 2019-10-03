@@ -1,4 +1,3 @@
-
 'use strict';
 
 var userName = prompt('What\'s your name?');
@@ -104,12 +103,7 @@ else {
   alert('Close but no cigar.  My commute takes about 55 minutes each morning.');
 }
 
-// 2.
-// Add a 7th question that has multiple possible correct answers that are stored in an array.
-// Give the user 6 attempts to guess the correct answer.
-// The guesses will end once the user guesses a correct answer or they run out of attempts.
-// Display all the possible correct answers to the user.
-// Consider using a loop of some sort for this question.
+// TO DO
 // Keep track of the total number of correct answers. At the end tell them how many they got correct out of the 7 questions asked.
 
 var whereGrewUp = ['a', 'b', 'c', 'd', 'e', 'f'];
@@ -154,7 +148,7 @@ for (i = 0; i < 5; i++) {
     // console.log('2B ' + whereGrewUp);
     // console.log('2B ' + whereGrewUp[i]);
   } else {
-    whereGrewUp[i +1] = prompt('Try again!').toLowerCase(); 
+    whereGrewUp[i +1] = prompt('Try again!').toLowerCase();
   }
 }
 // console.log(whereGrewUp);

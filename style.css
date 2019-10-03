@@ -4,10 +4,21 @@ body {
 }
 
 h1 {
+  font-weight: bold;
   color: #C7FF1A;
-  background-color: #634AFF;
+  background-color: rgba(99, 74, 255, 1);
+  padding: 30px;
+  font-family: system-ui;
+  font-size: 200%;
+}
+
+h2 {
+  font-weight: bold;
+  color: #634AFF;
+  background-color: rgba(199, 255, 26, 0.2);
   padding: 0ex;
   font-family: system-ui;
+  font-size: 150%;
 }
 
 .WE {
@@ -26,4 +37,8 @@ h1 {
   height: 250px;
   overflow: scroll;
   color: #140026;
+}
+
+.bold {
+  font-weight: bold;
 }
