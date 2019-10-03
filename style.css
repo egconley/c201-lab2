@@ -10,7 +10,16 @@ h1 {
   font-family: system-ui;
 }
 
-section {
+.WE {
+  background-color: rgba(250, 255, 255, 0.2);
+  padding: 3px;
+  width: 600px;
+  height: 250px;
+  overflow: scroll;
+  color: #140026;
+}
+
+.topTen {
   background-color: rgba(250, 255, 255, 0.2);
   padding: 3px;
   width: 600px;

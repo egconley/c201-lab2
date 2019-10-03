@@ -3,7 +3,7 @@
 
 var userName = prompt('What\'s your name?');
 
-prompt('Hello! ' + userName + '.' + ' Welcome to my About Me page!  Let\'s see how much you know about me.');
+alert('Hello! ' + userName + '.' + ' Welcome to my About Me page!  Let\'s see how much you know about me.');
 
 var myName = prompt('Quiz: Is my name Shmellen?');
 
@@ -113,16 +113,14 @@ else {
 // Keep track of the total number of correct answers. At the end tell them how many they got correct out of the 7 questions asked.
 
 var whereGrewUp = ['a', 'b', 'c', 'd', 'e', 'f'];
-var score = 0;
 
-whereGrewUp[0] = prompt('Where did I grow up?');
+whereGrewUp[0] = prompt('What two states did I grow up in?');
 
 for (i = 0; i < 5; i++) {
   switch (whereGrewUp[i]) {
   case 'Iowa':
   case 'California':
-    whereGrewUp[i +1] = prompt('That\'s right! Where else did I grow up?');
-    score++;
+    whereGrewUp[i +1] = prompt('That\'s one!');
     // console.log(whereGrewUp);
     // console.log(whereGrewUp.length);
     break;
@@ -135,4 +133,4 @@ for (i = 0; i < 5; i++) {
 // console.log(whereGrewUp);
 // console.log(score);
 
-// alert('Goodbye ' + userName + '!');
+alert('Goodbye ' + userName + '!');
