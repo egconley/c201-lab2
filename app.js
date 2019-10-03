@@ -3,17 +3,7 @@
 
 var userName = prompt('What\'s your name?');
 
-var aboutMeNotYou = prompt('Hello! ' + userName + '.' + ' You probably think this website is about you, don\'t you?');
-
-while (aboutMeNotYou.toLowerCase() === 'yes' ||aboutMeNotYou.toLowerCase() === 'y') {
-  // console.log('...don\'t you?');
-  aboutMeNotYou = prompt('Try again!');
-}
-
-if (aboutMeNotYou.toLowerCase() === 'no' || aboutMeNotYou.toLowerCase() === 'n') {
-  // console.log('Correct!  It\'s about me.');
-  alert('Correct!  It\'s about me.');
-}
+prompt('Hello! ' + userName + '.' + ' Welcome to my About Me page!  Let\'s see how much you know about me.');
 
 var myName = prompt('Quiz: Is my name Shmellen?');
 
@@ -28,11 +18,11 @@ if (myName.toLowerCase() === 'yes' || myName.toLowerCase === 'y') {
   alert('Oops, that\'s a glitch.');
 }
 
-var myOrigin = prompt('Am I from Texas?');
+var myOrigin = prompt('Am I from Minnisota?');
 
 if (myOrigin.toLowerCase() === 'yes' || myOrigin.toLowerCase() === 'y') {
   // console.log('Nope - not from Texas.  I grew up between Iowa and Northern California!');
-  alert('Nope - not from Texas.  I grew up between Iowa and Northern California!');
+  alert('Nope - not from Minnisota.  I grew up between Iowa and Northern California!');
 } else if (myOrigin.toLowerCase() === 'no' || myOrigin.toLowerCase() === 'n') {
   // console.log('Correct!  I grew up between Iowa and Northern California.');
   alert('Correct!  I grew up between Iowa and Northern California.');
@@ -48,7 +38,7 @@ if (myCollege.toLowerCase() === 'yes' || myCollege.toLowerCase() === 'y') {
   alert('Correct!  I went to UW for undergrad and grad school.');
 } else if (myCollege.toLowerCase() === 'no' || myCollege.toLowerCase() === 'n') {
   // console.log('Yes, I did.');
-  alert('Yes, I did.');
+  alert('Wrong... :(');
 }
 
 var myMajor = prompt('Was my undergrad major Computer Science?');
@@ -59,6 +49,19 @@ if (myMajor.toLowerCase() === 'yes' || myMajor.toLowerCase() === 'y') {
 } else if (myMajor.toLowerCase() === 'no' || myMajor.toLowerCase() === 'n') {
   // console.log('Correct! I majored in International Studies.');
   alert('Correct! I majored in International Studies.');
+} else {
+  // console.log('Oops, that\'s a glitch.');
+  alert('Oops, that\'s a glitch.');
+}
+
+var speakSpanish = prompt('Do I speak Spanish?');
+
+if (speakSpanish.toLowerCase() === 'yes' || speakSpanish.toLowerCase() === 'y') {
+  // console.log('Yup!  My partner is from Peru.');
+  alert('Yup!  My partner is from Peru.');
+} else if (speakSpanish.toLowerCase() === 'no' || speakSpanish.toLowerCase() === 'n') {
+  // console.log('Correct! I majored in International Studies.');
+  alert('I do actually!  My partner is from Peru.');
 } else {
   // console.log('Oops, that\'s a glitch.');
   alert('Oops, that\'s a glitch.');
