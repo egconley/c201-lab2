@@ -9,7 +9,7 @@ var myName = prompt('Quiz: Is my name Shmellen?');
 
 if (myName.toLowerCase() === 'yes' || myName.toLowerCase === 'y') {
   // console.log('That\'s not my name.  My name\'s Ellen.');
-  alert('That\'s not my name.  My name\'s Ellen.');
+  alert('Nope, it\'s Ellen.');
 } else if (myName.toLowerCase() === 'no' || myName.toLowerCase() === 'n') {
   // console.log('Good catch - it\'s Ellen.');
   alert('Good catch - it\'s Ellen.');
@@ -95,7 +95,7 @@ if (commuteMinutes[0] !== 55) {
   }
 }
 
-console.log(commuteMinutes);
+// console.log(commuteMinutes);
 
 if (commuteMinutes.includes(55)) {
   alert('Way to go!  My commute takes about 55 minutes each morning!');
@@ -114,20 +114,47 @@ else {
 
 var whereGrewUp = ['a', 'b', 'c', 'd', 'e', 'f'];
 
-whereGrewUp[0] = prompt('What two states did I grow up in?');
+whereGrewUp[0] = prompt('What two states did I grow up in?').toLowerCase();
+// console.log('whereGrewUp[0] ' + whereGrewUp[0]);
 
 for (i = 0; i < 5; i++) {
-  switch (whereGrewUp[i]) {
-  case 'Iowa':
-  case 'California':
-    whereGrewUp[i +1] = prompt('That\'s one!');
-    // console.log(whereGrewUp);
-    // console.log(whereGrewUp.length);
+  if (!(whereGrewUp.includes('ia')) && !(whereGrewUp.includes('iowa')) && !(whereGrewUp.includes('california')) && !(whereGrewUp.includes('ca'))) {
+    // console.log('1 ' + whereGrewUp);
+    // console.log('1 ' + whereGrewUp[i]);
+    switch (whereGrewUp[i]) {
+    case 'ca':
+    case 'california':
+    case 'ia':
+    case 'iowa':
+      whereGrewUp[i + 1] = prompt('That\'s one!').toLowerCase();
+      break;
+    default:
+      whereGrewUp[i + 1] = prompt('Try again!').toLowerCase();
+      break;
+    } 
+    // console.log('1B ' + whereGrewUp);
+    // console.log('1B ' + whereGrewUp[i]);
+  } else if ((whereGrewUp.includes('ia') && whereGrewUp.includes('ca')) || (whereGrewUp.includes('iowa') && whereGrewUp.includes('california')) || (whereGrewUp.includes('ia') && whereGrewUp.includes('california')) || (whereGrewUp.includes('iowa') && whereGrewUp.includes('ca'))) {
+    alert('That\'s the other one! Great job!');
     break;
-  default:
-    whereGrewUp[i +1] = prompt('Try again!');
-    // console.log(whereGrewUp);
-    break;
+  } else if ( whereGrewUp.includes('ia') || whereGrewUp.includes('iowa') || whereGrewUp.includes('california') || whereGrewUp.includes('ca') ) {
+    // console.log('2 ' + whereGrewUp);
+    // console.log('2 ' + whereGrewUp[i]);
+    switch (whereGrewUp[i]) {
+    case 'ca':
+    case 'california':
+    case 'ia':
+    case 'iowa':
+      whereGrewUp[i +1] = prompt('That\'s one!').toLowerCase();
+      break;
+    default:
+      whereGrewUp[i +1] = prompt('Try again!').toLowerCase();
+      break;
+    }
+    // console.log('2B ' + whereGrewUp);
+    // console.log('2B ' + whereGrewUp[i]);
+  } else {
+    whereGrewUp[i +1] = prompt('Try again!').toLowerCase(); 
   }
 }
 // console.log(whereGrewUp);
