@@ -112,6 +112,7 @@ whereGrewUp[0] = prompt('What two states did I grow up in?').toLowerCase();
 // console.log('whereGrewUp[0] ' + whereGrewUp[0]);
 
 for (i = 0; i < 5; i++) {
+  /* if whereGrewUp doesn't include any correct answers and the user gets one correct */
   if (!(whereGrewUp.includes('ia')) && !(whereGrewUp.includes('iowa')) && !(whereGrewUp.includes('california')) && !(whereGrewUp.includes('ca'))) {
     // console.log('1 ' + whereGrewUp);
     // console.log('1 ' + whereGrewUp[i]);
@@ -125,12 +126,14 @@ for (i = 0; i < 5; i++) {
     default:
       whereGrewUp[i + 1] = prompt('Try again!').toLowerCase();
       break;
-    } 
+    }
     // console.log('1B ' + whereGrewUp);
     // console.log('1B ' + whereGrewUp[i]);
+  /* if whereGrewUp includes both correct answers */ 
   } else if ((whereGrewUp.includes('ia') && whereGrewUp.includes('ca')) || (whereGrewUp.includes('iowa') && whereGrewUp.includes('california')) || (whereGrewUp.includes('ia') && whereGrewUp.includes('california')) || (whereGrewUp.includes('iowa') && whereGrewUp.includes('ca'))) {
     alert('That\'s the other one! Great job!');
     break;
+  /* if whereGrewUp includes just one correct answer */
   } else if ( whereGrewUp.includes('ia') || whereGrewUp.includes('iowa') || whereGrewUp.includes('california') || whereGrewUp.includes('ca') ) {
     // console.log('2 ' + whereGrewUp);
     // console.log('2 ' + whereGrewUp[i]);
