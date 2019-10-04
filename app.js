@@ -6,7 +6,7 @@ alert('Hello! ' + userName + '.' + ' Welcome to my About Me page!  Let\'s see ho
 
 var userAnswers = [0, 0, 0, 0, 0, 0, 0];
 
-function question1(){
+function question1() {
   var myName = prompt('Quiz: Is my name Shmellen?');
 
   if (myName.toLowerCase() === 'yes' || myName.toLowerCase === 'y') {
@@ -24,11 +24,11 @@ function question1(){
 // console.log(question1());
 // console.log(userAnswers);
 
-function question2(){
+function question2() {
   var myOrigin = prompt('Am I from Minnisota?');
 
   if (myOrigin.toLowerCase() === 'yes' || myOrigin.toLowerCase() === 'y') {
-  // console.log('Nope - not from Texas.  I grew up between Iowa and Northern California!');
+  // console.log('Nope - not from Minnisota.  I grew up between Iowa and Northern California!');
     alert('Nope - not from Minnisota.  I grew up between Iowa and Northern California!');
   } else if (myOrigin.toLowerCase() === 'no' || myOrigin.toLowerCase() === 'n') {
   // console.log('Correct!  I grew up between Iowa and Northern California.');
@@ -138,62 +138,52 @@ function question7() {
   whereGrewUp[0] = prompt('What two states did I grow up in?').toLowerCase();
   // console.log('whereGrewUp[0] ' + whereGrewUp[0]);
 
-  for (var i = 0; i < 5; i++) {
+  for (var j = 0; j < 5; j++) {
     /* if whereGrewUp doesn't include any correct answers and the user gets one correct */
-    if (!(whereGrewUp.includes('ia')) && !(whereGrewUp.includes('iowa')) && !(whereGrewUp.includes('california')) && !(whereGrewUp.includes('ca'))) {
+    if (!(whereGrewUp.includes('iowa')) && !(whereGrewUp.includes('california'))) {
       // console.log('1 ' + whereGrewUp);
       // console.log('1 ' + whereGrewUp[i]);
-      switch (whereGrewUp[i]) {
-      case 'ca':
+      switch (whereGrewUp[j]) {
       case 'california':
-      case 'ia':
       case 'iowa':
-        whereGrewUp[i + 1] = prompt('That\'s one!').toLowerCase();
+        whereGrewUp[j + 1] = prompt('That\'s one!').toLowerCase();
         break;
       default:
-        whereGrewUp[i + 1] = prompt('Try again!').toLowerCase();
+        whereGrewUp[j + 1] = prompt('Try again!').toLowerCase();
         break;
       }
       // console.log('1B ' + whereGrewUp);
       // console.log('1B ' + whereGrewUp[i]);
       /* if whereGrewUp includes both correct answers */
-    } else if ((whereGrewUp.includes('ia') && whereGrewUp.includes('ca')) || (whereGrewUp.includes('iowa') && whereGrewUp.includes('california')) || (whereGrewUp.includes('ia') && whereGrewUp.includes('california')) || (whereGrewUp.includes('iowa') && whereGrewUp.includes('ca'))) {
+    } else if (whereGrewUp.includes('iowa') && whereGrewUp.includes('california')) {
       alert('That\'s the other one! Great job!');
       return userAnswers[6] = 1;
       /* if whereGrewUp includes just one correct answer */
-    } else if (whereGrewUp.includes('ia') || whereGrewUp.includes('iowa') || whereGrewUp.includes('california') || whereGrewUp.includes('ca')) {
+    } else if (whereGrewUp.includes('iowa') || whereGrewUp.includes('california')) {
       // console.log('2 ' + whereGrewUp);
       // console.log('2 ' + whereGrewUp[i]);
-      switch (whereGrewUp[i]) {
-      case 'ca':
+      switch (whereGrewUp[j]) {
       case 'california':
-      case 'ia':
       case 'iowa':
-        whereGrewUp[i + 1] = prompt('That\'s one!').toLowerCase();
+        whereGrewUp[j + 1] = prompt('That\'s one!').toLowerCase();
         break;
       default:
-        whereGrewUp[i + 1] = prompt('Try again!').toLowerCase();
+        whereGrewUp[j + 1] = prompt('Try again!').toLowerCase();
         break;
       }
       // console.log('2B ' + whereGrewUp);
       // console.log('2B ' + whereGrewUp[i]);
     } else {
-      whereGrewUp[i + 1] = prompt('Try again!').toLowerCase();
+      whereGrewUp[j + 1] = prompt('Try again!').toLowerCase();
     }
   }
 
-  if (!(whereGrewUp.includes('ia')) && !(whereGrewUp.includes('iowa')) && !(whereGrewUp.includes('california')) && !(whereGrewUp.includes('ca'))){
+  if (!(whereGrewUp.includes('iowa')) && !(whereGrewUp.includes('california'))) {
     alert('Nice Try. I grew up in Iowa and California');
   }
 }
 // console.log(question7());
 // console.log(userAnswers);
-
-
-// console.log(whereGrewUp);
-// console.log(score);
-alert('Congrats! You got ' + (Number(userAnswers[0]) + Number(userAnswers[1]) + Number(userAnswers[2]) + Number(userAnswers[3]) + Number(userAnswers[4]) + Number(userAnswers[5]) + Number(userAnswers[6])) + ' out of ' + userAnswers.length);
-alert('Goodbye ' + userName + '!');
 
 question1();
 question2();
@@ -202,3 +192,8 @@ question4();
 question5();
 question6();
 question7();
+
+// console.log(whereGrewUp);
+// console.log(score);
+alert('Congrats! You got ' + (Number(userAnswers[0]) + Number(userAnswers[1]) + Number(userAnswers[2]) + Number(userAnswers[3]) + Number(userAnswers[4]) + Number(userAnswers[5]) + Number(userAnswers[6])) + ' out of ' + userAnswers.length);
+alert('Goodbye ' + userName + '!');
