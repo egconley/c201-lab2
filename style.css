@@ -5,8 +5,8 @@ body {
 
 h1 {
   font-weight: bold;
-  color: #C7FF1A;
-  background-color: rgba(99, 74, 255, 1);
+  color: #590CE8;
+  background-color: #000025;
   padding: 30px;
   font-family: system-ui;
   font-size: 200%;
@@ -14,31 +14,43 @@ h1 {
 
 h2 {
   font-weight: bold;
-  color: #634AFF;
-  background-color: rgba(199, 255, 26, 0.2);
+  color: #FF0D4D;
+  background-color: rgba(89, 12, 232, 1);
   padding: 0ex;
   font-family: system-ui;
   font-size: 150%;
 }
 
 .WE {
-  background-color: rgba(250, 255, 255, 0.2);
+  background-color: rgba(89,12, 232, 0.1);
   padding: 3px;
   width: 600px;
   height: 250px;
   overflow: scroll;
-  color: #140026;
+  color: #000025;
 }
 
 .topTen {
-  background-color: rgba(250, 255, 255, 0.2);
+  background-color: rgba(89,12, 232, 0.1);
   padding: 3px;
   width: 600px;
   height: 250px;
   overflow: scroll;
-  color: #140026;
+  color: #000025;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.topTen ol li {
+  list-style: decimal;
+  padding: 0.5%;
+  list-style-position: inside;
+}
+
+.WE ul li {
+  list-style: none;
+  padding: 0.5%;
+  list-style-position: inside;
 }
