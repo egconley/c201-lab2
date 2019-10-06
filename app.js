@@ -101,32 +101,32 @@ function question6() {
   if (commuteMinutes[0] !== commuteMinAnswer) {
     for (var i = 0; i <= 3; i++) {
       if (commuteMinutes[i] === commuteMinAnswer) {
-        console.log('Line 104, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
+        // console.log('Line 104, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
         return alert('Way to go!  My commute takes about 55 minutes each morning!');
       } else if (commuteMinutes[i] < commuteMinAnswer) {
-        console.log('Line 106, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
+        // console.log('Line 106, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
         if (commuteMinutes[i] <= (commuteMinAnswer - 20)) {
           commuteMinutes[i + 1] = Number(prompt('Higher!'));
-          console.log('Line 109, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
+          // console.log('Line 109, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
         } else if (commuteMinutes[i] <= (commuteMinAnswer - 10)) {
           commuteMinutes[i + 1] = Number(prompt('A little bit higher...'));
-          console.log('Line 112, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
+          // console.log('Line 112, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
         } else if (commuteMinutes[i] <= (commuteMinAnswer - 5)) {
           commuteMinutes[i + 1] = Number(prompt('A teensy bit higher...'));
-          console.log('Line 115, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
+          // console.log('Line 115, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
         }
       }
       else if (commuteMinutes[i] > commuteMinAnswer) {
-        console.log('Line 119, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
+        // console.log('Line 119, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
         if (commuteMinutes[i] >= (commuteMinAnswer + 5)) {
           commuteMinutes[i + 1] = Number(prompt('Way lower!'));
-          console.log('Line 122, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
+          // console.log('Line 122, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
         } else if (commuteMinutes[i] >= (commuteMinAnswer + 10)) {
           commuteMinutes[i + 1] = Number(prompt('A little bit lower...'));
-          console.log('Line 125, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
+          // console.log('Line 125, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
         } else if (commuteMinutes[i] >= (commuteMinAnswer + 20)) {
           commuteMinutes[i + 1] = Number(prompt('A teensy bit lower...'));
-          console.log('Line 128, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
+          // console.log('Line 128, i: ' + i + ', commuteMinutes[i]: ' + commuteMinutes[i]);
         }
       }
     }
@@ -153,40 +153,40 @@ function question7() {
     console.log('Line 153, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
     /* if whereGrewUp doesn't include any correct answers and the user gets one correct */
     if (!(whereGrewUp.includes(grewUpAnswer[0])) && !(whereGrewUp.includes(grewUpAnswer[1]))) {
-      console.log('Line 156, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+      // console.log('Line 156, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
       switch (whereGrewUp[j]) {
       case grewUpAnswer[0]:
       case grewUpAnswer[1]:
         whereGrewUp[j + 1] = prompt('That\'s one!').toLowerCase();
-        console.log('Line 161, j: ' + j + 'whereGrewUp: ' + whereGrewUp);
+        // console.log('Line 161, j: ' + j + 'whereGrewUp: ' + whereGrewUp);
         break;
       default:
         whereGrewUp[j + 1] = prompt('Try again!').toLowerCase();
-        console.log('Line 165, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+        // console.log('Line 165, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
         break;
       }
       /* if whereGrewUp includes both correct answers */
     } else if (whereGrewUp.includes(grewUpAnswer[0]) && whereGrewUp.includes(grewUpAnswer[1])) {
-      console.log('Line 170, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+      // console.log('Line 170, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
       alert('That\'s the other one! Great job!');
       return userAnswers[6] = 1;
       /* if whereGrewUp includes just one correct answer */
     } else if (whereGrewUp.includes(grewUpAnswer[0]) || whereGrewUp.includes(grewUpAnswer[1])) {
-      console.log('Line 175, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+      // console.log('Line 175, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
       switch (whereGrewUp[j]) {
       case grewUpAnswer[0]:
       case grewUpAnswer[1]:
         whereGrewUp[j + 1] = prompt('That\'s one!').toLowerCase();
-        console.log('Line 180, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+        // console.log('Line 180, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
         break;
       default:
         whereGrewUp[j + 1] = prompt('Try again!').toLowerCase();
-        console.log('Line 184, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+        // console.log('Line 184, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
         break;
       }
     } else {
       whereGrewUp[j + 1] = prompt('Try again!').toLowerCase();
-      console.log('Line 189, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+      // console.log('Line 189, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
     }
   }
 
