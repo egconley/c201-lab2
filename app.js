@@ -94,7 +94,7 @@ function question5() {
 // console.log(userScore);
 
 function question6() {
-  var commuteMinutes = [1, 2, 3, 4];
+  var commuteMinutes = [];
   // console.log('commuteMinutes 1: ' + commuteMinutes);
   var commuteMinAnswer = 55;
   commuteMinutes[0] = Number(prompt('How long do you think it takes me to get to Code Fellows in the morning?'));
