@@ -1,104 +1,103 @@
 'use strict';
 
-// var userName = prompt('What\'s your name?');
+var userName = prompt('What\'s your name?');
 
-// alert('Hello! ' + userName + '.' + ' Welcome to my About Me page!  Let\'s see how much you know about me.');
+alert('Hello! ' + userName + '.' + ' Welcome to my About Me page!  Let\'s see how much you know about me.');
 
 var userAnswers = [0, 0, 0, 0, 0, 0, 0];
 
-// function question1() {
-//   var myName = prompt('Quiz: Is my name Shmellen?');
+function question1() {
+  var myName = prompt('Quiz: Is my name Shmellen?');
 
-//   if (myName.toLowerCase() === 'yes' || myName.toLowerCase === 'y') {
-//   // console.log('That\'s not my name.  My name\'s Ellen.');
-//     alert('Nope, it\'s Ellen.');
-//   } else if (myName.toLowerCase() === 'no' || myName.toLowerCase() === 'n') {
-//   // console.log('Good catch - it\'s Ellen.');
-//     alert('Good catch - it\'s Ellen.');
-//     return userAnswers[0] = 1;
-//   } else {
-//   // console.log('Oops, that\'s a glitch.');
-//     alert('Oops, that\'s a glitch.');
-//   }
-// }
-// // console.log(question1());
-// // console.log(userAnswers);
+  if (myName.toLowerCase() === 'yes' || myName.toLowerCase === 'y') {
+  // console.log('That\'s not my name.  My name\'s Ellen.');
+    alert('Nope, it\'s Ellen.');
+  } else if (myName.toLowerCase() === 'no' || myName.toLowerCase() === 'n') {
+  // console.log('Good catch - it\'s Ellen.');
+    alert('Good catch - it\'s Ellen.');
+    return userAnswers[0] = 1;
+  } else {
+  // console.log('Oops, that\'s a glitch.');
+    alert('Oops, that\'s a glitch.');
+  }
+}
+// console.log(question1());
+// console.log(userAnswers);
 
-// function question2() {
-//   var myOrigin = prompt('Am I from Minnisota?');
+function question2() {
+  var myOrigin = prompt('Am I from Minnisota?');
 
-//   if (myOrigin.toLowerCase() === 'yes' || myOrigin.toLowerCase() === 'y') {
-//   // console.log('Nope - not from Minnisota.  I grew up between Iowa and Northern California!');
-//     alert('Nope - not from Minnisota.  I grew up between Iowa and Northern California!');
-//   } else if (myOrigin.toLowerCase() === 'no' || myOrigin.toLowerCase() === 'n') {
-//   // console.log('Correct!  I grew up between Iowa and Northern California.');
-//     alert('Correct!  I grew up between Iowa and Northern California.');
-//     return userAnswers[1] = 1;
-//   } else {
-//   // console.log('Oops, that\'s a glitch.');
-//     alert('Oops, that\'s a glitch.');
-//   }
-// }
-// // console.log(question2());
-// // console.log(userAnswers);
+  if (myOrigin.toLowerCase() === 'yes' || myOrigin.toLowerCase() === 'y') {
+  // console.log('Nope - not from Minnisota.  I grew up between Iowa and Northern California!');
+    alert('Nope - not from Minnisota.  I grew up between Iowa and Northern California!');
+  } else if (myOrigin.toLowerCase() === 'no' || myOrigin.toLowerCase() === 'n') {
+  // console.log('Correct!  I grew up between Iowa and Northern California.');
+    alert('Correct!  I grew up between Iowa and Northern California.');
+    return userAnswers[1] = 1;
+  } else {
+  // console.log('Oops, that\'s a glitch.');
+    alert('Oops, that\'s a glitch.');
+  }
+}
+// console.log(question2());
+// console.log(userAnswers);
 
-// function question3() {
-//   var myCollege = prompt('Did I go to UW?');
+function question3() {
+  var myCollege = prompt('Did I go to UW?');
 
-//   if (myCollege.toLowerCase() === 'yes' || myCollege.toLowerCase() === 'y') {
-//     // console.log('Correct!  I went to UW for undergrad and grad school.');
-//     alert('Correct!  I went to UW for undergrad and grad school.');
-//     return userAnswers[2] = 1;
-//   } else if (myCollege.toLowerCase() === 'no' || myCollege.toLowerCase() === 'n') {
-//     // console.log('Yes, I did.');
-//     alert('Wrong... :(');
-//   }
-// }
-// // console.log(question3());
-// // console.log(userAnswers);
+  if (myCollege.toLowerCase() === 'yes' || myCollege.toLowerCase() === 'y') {
+    // console.log('Correct!  I went to UW for undergrad and grad school.');
+    alert('Correct!  I went to UW for undergrad and grad school.');
+    return userAnswers[2] = 1;
+  } else if (myCollege.toLowerCase() === 'no' || myCollege.toLowerCase() === 'n') {
+    // console.log('Yes, I did.');
+    alert('Wrong... :(');
+  }
+}
+// // // console.log(question3());
+// // // console.log(userAnswers);
 
-// function question4() {
-//   var myMajor = prompt('Was my undergrad major Computer Science?');
+function question4() {
+  var myMajor = prompt('Was my undergrad major Computer Science?');
 
-//   if (myMajor.toLowerCase() === 'yes' || myMajor.toLowerCase() === 'y') {
-//     // console.log('Unfortunately not, I was very niave back then and got a degree that I am not going to use at all...');
-//     alert('Unfortunately not, I was very niave back then and got a degree that I am not going to use at all...');
-//   } else if (myMajor.toLowerCase() === 'no' || myMajor.toLowerCase() === 'n') {
-//     // console.log('Correct! I majored in International Studies.');
-//     alert('Correct! I majored in International Studies.');
-//     return userAnswers[3] = 1;
-//   } else {
-//     // console.log('Oops, that\'s a glitch.');
-//     alert('Oops, that\'s a glitch.');
-//   }
-// }
-// // console.log(question4());
-// // console.log(userAnswers);
+  if (myMajor.toLowerCase() === 'yes' || myMajor.toLowerCase() === 'y') {
+    // console.log('Unfortunately not, I was very niave back then and got a degree that I am not going to use at all...');
+    alert('Unfortunately not, I was very niave back then and got a degree that I am not going to use at all...');
+  } else if (myMajor.toLowerCase() === 'no' || myMajor.toLowerCase() === 'n') {
+    // console.log('Correct! I majored in International Studies.');
+    alert('Correct! I majored in International Studies.');
+    return userAnswers[3] = 1;
+  } else {
+    // console.log('Oops, that\'s a glitch.');
+    alert('Oops, that\'s a glitch.');
+  }
+}
+// console.log(question4());
+// console.log(userAnswers);
 
-// function question5() {
-//   var speakSpanish = prompt('Do I speak Spanish?');
+function question5() {
+  var speakSpanish = prompt('Do I speak Spanish?');
 
-//   if (speakSpanish.toLowerCase() === 'yes' || speakSpanish.toLowerCase() === 'y') {
-//     // console.log('Yup!  My partner is from Peru.');
-//     alert('Yup!  My partner is from Peru.');
-//     return userAnswers[4] = 1;
-//   } else if (speakSpanish.toLowerCase() === 'no' || speakSpanish.toLowerCase() === 'n') {
-//     // console.log('Correct! I majored in International Studies.');
-//     alert('I do actually!  My partner is from Peru.');
-//   } else {
-//     // console.log('Oops, that\'s a glitch.');
-//     alert('Oops, that\'s a glitch.');
-//   }
-// }
-// // console.log(question5());
-// // console.log(userAnswers);
+  if (speakSpanish.toLowerCase() === 'yes' || speakSpanish.toLowerCase() === 'y') {
+    // console.log('Yup!  My partner is from Peru.');
+    alert('Yup!  My partner is from Peru.');
+    return userAnswers[4] = 1;
+  } else if (speakSpanish.toLowerCase() === 'no' || speakSpanish.toLowerCase() === 'n') {
+    // console.log('Correct! I majored in International Studies.');
+    alert('I do actually!  My partner is from Peru.');
+  } else {
+    // console.log('Oops, that\'s a glitch.');
+    alert('Oops, that\'s a glitch.');
+  }
+}
+// console.log(question5());
+// console.log(userAnswers);
 
 function question6() {
   var commuteMinutes = [1, 2, 3, 4];
   // console.log('commuteMinutes 1: ' + commuteMinutes);
   var commuteMinAnswer = 55;
   commuteMinutes[0] = Number(prompt('How long do you think it takes me to get to Code Fellows in the morning?'));
-  // made sure if user guessed answer after 1st try that it would stop asking, made the right answer into a variable.
   if (commuteMinutes[0] !== commuteMinAnswer) {
     for (var i = 0; i <= 3; i++) {
       if (commuteMinutes[i] === commuteMinAnswer) {
@@ -143,68 +142,71 @@ function question6() {
 // console.log(question6());
 // console.log(userAnswers);
 
-// function question7() {
-//   var whereGrewUp = ['a', 'b', 'c', 'd', 'e', 'f'];
+function question7() {
+  var whereGrewUp = [];
+  var grewUpAnswer = ['iowa', 'california'];
 
-//   whereGrewUp[0] = prompt('What two states did I grow up in?').toLowerCase();
-//   // console.log('whereGrewUp[0] ' + whereGrewUp[0]);
+  whereGrewUp[0] = prompt('What two states did I grow up in?').toLowerCase();
+  // console.log('whereGrewUp[0] ' + whereGrewUp[0]);
 
-//   for (var j = 0; j < 5; j++) {
-//     /* if whereGrewUp doesn't include any correct answers and the user gets one correct */
-//     if (!(whereGrewUp.includes('iowa')) && !(whereGrewUp.includes('california'))) {
-//       // console.log('1 ' + whereGrewUp);
-//       // console.log('1 ' + whereGrewUp[i]);
-//       switch (whereGrewUp[j]) {
-//       case 'california':
-//       case 'iowa':
-//         whereGrewUp[j + 1] = prompt('That\'s one!').toLowerCase();
-//         break;
-//       default:
-//         whereGrewUp[j + 1] = prompt('Try again!').toLowerCase();
-//         break;
-//       }
-//       // console.log('1B ' + whereGrewUp);
-//       // console.log('1B ' + whereGrewUp[i]);
-//       /* if whereGrewUp includes both correct answers */
-//     } else if (whereGrewUp.includes('iowa') && whereGrewUp.includes('california')) {
-//       alert('That\'s the other one! Great job!');
-//       return userAnswers[6] = 1;
-//       /* if whereGrewUp includes just one correct answer */
-//     } else if (whereGrewUp.includes('iowa') || whereGrewUp.includes('california')) {
-//       // console.log('2 ' + whereGrewUp);
-//       // console.log('2 ' + whereGrewUp[i]);
-//       switch (whereGrewUp[j]) {
-//       case 'california':
-//       case 'iowa':
-//         whereGrewUp[j + 1] = prompt('That\'s one!').toLowerCase();
-//         break;
-//       default:
-//         whereGrewUp[j + 1] = prompt('Try again!').toLowerCase();
-//         break;
-//       }
-//       // console.log('2B ' + whereGrewUp);
-//       // console.log('2B ' + whereGrewUp[i]);
-//     } else {
-//       whereGrewUp[j + 1] = prompt('Try again!').toLowerCase();
-//     }
-//   }
+  for (var j = 0; j < 5; j++) {
+    console.log('Line 153, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+    /* if whereGrewUp doesn't include any correct answers and the user gets one correct */
+    if (!(whereGrewUp.includes(grewUpAnswer[0])) && !(whereGrewUp.includes(grewUpAnswer[1]))) {
+      console.log('Line 156, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+      switch (whereGrewUp[j]) {
+      case grewUpAnswer[0]:
+      case grewUpAnswer[1]:
+        whereGrewUp[j + 1] = prompt('That\'s one!').toLowerCase();
+        console.log('Line 161, j: ' + j + 'whereGrewUp: ' + whereGrewUp);
+        break;
+      default:
+        whereGrewUp[j + 1] = prompt('Try again!').toLowerCase();
+        console.log('Line 165, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+        break;
+      }
+      /* if whereGrewUp includes both correct answers */
+    } else if (whereGrewUp.includes(grewUpAnswer[0]) && whereGrewUp.includes(grewUpAnswer[1])) {
+      console.log('Line 170, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+      alert('That\'s the other one! Great job!');
+      return userAnswers[6] = 1;
+      /* if whereGrewUp includes just one correct answer */
+    } else if (whereGrewUp.includes(grewUpAnswer[0]) || whereGrewUp.includes(grewUpAnswer[1])) {
+      console.log('Line 175, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+      switch (whereGrewUp[j]) {
+      case grewUpAnswer[0]:
+      case grewUpAnswer[1]:
+        whereGrewUp[j + 1] = prompt('That\'s one!').toLowerCase();
+        console.log('Line 180, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+        break;
+      default:
+        whereGrewUp[j + 1] = prompt('Try again!').toLowerCase();
+        console.log('Line 184, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+        break;
+      }
+    } else {
+      whereGrewUp[j + 1] = prompt('Try again!').toLowerCase();
+      console.log('Line 189, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
+    }
+  }
 
-//   if (!(whereGrewUp.includes('iowa')) && !(whereGrewUp.includes('california'))) {
-//     alert('Nice Try. I grew up in Iowa and California');
-//   }
-// }
+  if (!(whereGrewUp.includes(grewUpAnswer[0])) && !(whereGrewUp.includes(grewUpAnswer[1]))) {
+    alert('Nice Try. I grew up in Iowa and California');
+  }
+}
 // console.log(question7());
 // console.log(userAnswers);
 
-// question1();
-// question2();
-// question3();
-// question4();
-// question5();
+question1();
+question2();
+question3();
+question4();
+question5();
 question6();
-// question7();
+question7();
 
 // console.log(whereGrewUp);
 // console.log(score);
 alert('Congrats! You got ' + (Number(userAnswers[0]) + Number(userAnswers[1]) + Number(userAnswers[2]) + Number(userAnswers[3]) + Number(userAnswers[4]) + Number(userAnswers[5]) + Number(userAnswers[6])) + ' out of ' + userAnswers.length);
-// alert('Goodbye ' + userName + '!');
+
+alert('Goodbye ' + userName + '!');
