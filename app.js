@@ -4,7 +4,7 @@ var userName = prompt('What\'s your name?');
 
 alert('Hello! ' + userName + '.' + ' Welcome to my About Me page!  Let\'s see how much you know about me.');
 
-var userAnswers = [0, 0, 0, 0, 0, 0, 0];
+var userScore = 0;
 
 function question1() {
   var myName = prompt('Quiz: Is my name Shmellen?');
@@ -15,14 +15,14 @@ function question1() {
   } else if (myName.toLowerCase() === 'no' || myName.toLowerCase() === 'n') {
   // console.log('Good catch - it\'s Ellen.');
     alert('Good catch - it\'s Ellen.');
-    return userAnswers[0] = 1;
+    return userScore++;
   } else {
   // console.log('Oops, that\'s a glitch.');
     alert('Oops, that\'s a glitch.');
   }
 }
 // console.log(question1());
-// console.log(userAnswers);
+// console.log(userScore);
 
 function question2() {
   var myOrigin = prompt('Am I from Minnisota?');
@@ -33,14 +33,14 @@ function question2() {
   } else if (myOrigin.toLowerCase() === 'no' || myOrigin.toLowerCase() === 'n') {
   // console.log('Correct!  I grew up between Iowa and Northern California.');
     alert('Correct!  I grew up between Iowa and Northern California.');
-    return userAnswers[1] = 1;
+    return userScore++;
   } else {
   // console.log('Oops, that\'s a glitch.');
     alert('Oops, that\'s a glitch.');
   }
 }
 // console.log(question2());
-// console.log(userAnswers);
+// console.log(userScore);
 
 function question3() {
   var myCollege = prompt('Did I go to UW?');
@@ -48,14 +48,14 @@ function question3() {
   if (myCollege.toLowerCase() === 'yes' || myCollege.toLowerCase() === 'y') {
     // console.log('Correct!  I went to UW for undergrad and grad school.');
     alert('Correct!  I went to UW for undergrad and grad school.');
-    return userAnswers[2] = 1;
+    return userScore++;
   } else if (myCollege.toLowerCase() === 'no' || myCollege.toLowerCase() === 'n') {
     // console.log('Yes, I did.');
     alert('Wrong... :(');
   }
 }
 // // // console.log(question3());
-// // // console.log(userAnswers);
+// // // console.log(userScore);
 
 function question4() {
   var myMajor = prompt('Was my undergrad major Computer Science?');
@@ -66,14 +66,14 @@ function question4() {
   } else if (myMajor.toLowerCase() === 'no' || myMajor.toLowerCase() === 'n') {
     // console.log('Correct! I majored in International Studies.');
     alert('Correct! I majored in International Studies.');
-    return userAnswers[3] = 1;
+    return userScore++;
   } else {
     // console.log('Oops, that\'s a glitch.');
     alert('Oops, that\'s a glitch.');
   }
 }
 // console.log(question4());
-// console.log(userAnswers);
+// console.log(userScore);
 
 function question5() {
   var speakSpanish = prompt('Do I speak Spanish?');
@@ -81,7 +81,7 @@ function question5() {
   if (speakSpanish.toLowerCase() === 'yes' || speakSpanish.toLowerCase() === 'y') {
     // console.log('Yup!  My partner is from Peru.');
     alert('Yup!  My partner is from Peru.');
-    return userAnswers[4] = 1;
+    return userScore++;
   } else if (speakSpanish.toLowerCase() === 'no' || speakSpanish.toLowerCase() === 'n') {
     // console.log('Correct! I majored in International Studies.');
     alert('I do actually!  My partner is from Peru.');
@@ -91,7 +91,7 @@ function question5() {
   }
 }
 // console.log(question5());
-// console.log(userAnswers);
+// console.log(userScore);
 
 function question6() {
   var commuteMinutes = [1, 2, 3, 4];
@@ -133,14 +133,14 @@ function question6() {
   }
   if (commuteMinutes.includes(commuteMinAnswer)) {
     alert('Way to go!  My commute takes about 55 minutes each morning!');
-    return userAnswers[5] = 1;
+    return userScore++;
   }
   else {
     alert('Close but no cigar.  My commute takes about 55 minutes each morning.');
   }
 }
 // console.log(question6());
-// console.log(userAnswers);
+// console.log(userScore);
 
 function question7() {
   var whereGrewUp = [];
@@ -169,7 +169,7 @@ function question7() {
     } else if (whereGrewUp.includes(grewUpAnswer[0]) && whereGrewUp.includes(grewUpAnswer[1])) {
       // console.log('Line 170, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
       alert('That\'s the other one! Great job!');
-      return userAnswers[6] = 1;
+      return userScore++;
       /* if whereGrewUp includes just one correct answer */
     } else if (whereGrewUp.includes(grewUpAnswer[0]) || whereGrewUp.includes(grewUpAnswer[1])) {
       // console.log('Line 175, j: ' + j + ', whereGrewUp: ' + whereGrewUp);
@@ -195,7 +195,7 @@ function question7() {
   }
 }
 // console.log(question7());
-// console.log(userAnswers);
+// console.log(userScore);
 
 question1();
 question2();
@@ -207,6 +207,6 @@ question7();
 
 // console.log(whereGrewUp);
 // console.log(score);
-alert('Congrats! You got ' + (Number(userAnswers[0]) + Number(userAnswers[1]) + Number(userAnswers[2]) + Number(userAnswers[3]) + Number(userAnswers[4]) + Number(userAnswers[5]) + Number(userAnswers[6])) + ' out of ' + userAnswers.length);
+alert('Congrats! You got ' + userScore + ' out of ' + 7);
 
 alert('Goodbye ' + userName + '!');
