@@ -102,20 +102,20 @@ function question6() {
   if (commuteMinutes[0] !== 55) {
     for (var i = 0; i <= 3/*commuteMinutes.length*/; i++) {
       if (commuteMinutes[i] < 55) {
-        if (commuteMinutes[i] <= 30) {
+        if (commuteMinutes[i] <= 30 & commuteMinutes[i] < 55) {
           commuteMinutes[i + 1] = Number(prompt('Higher!'));
-        } else if (commuteMinutes[i] <= 40) {
+        } else if (commuteMinutes[i] <= 40 & commuteMinutes[i] < 55) {
           commuteMinutes[i + 1] = Number(prompt('A little bit higher...'));
-        } else if (commuteMinutes[i] <= 50) {
+        } else if (commuteMinutes[i] <= 50 & commuteMinutes[i] < 55) {
           commuteMinutes[i + 1] = Number(prompt('A teensy bit higher...'));
         }
       }
       else if (commuteMinutes[i] > 55) {
         if (commuteMinutes[i] >= 100) {
           commuteMinutes[i + 1] = Number(prompt('Way lower!'));
-        } else if (commuteMinutes[i] >= 70) {
+        } else if (commuteMinutes[i] >= 70 & commuteMinutes[i] >= 100) {
           commuteMinutes[i + 1] = Number(prompt('A little bit lower...'));
-        } else if (commuteMinutes[i] >= 60) {
+        } else if (commuteMinutes[i] >= 60 & commuteMinutes[i] >= 100) {
           commuteMinutes[i + 1] = Number(prompt('A teensy bit lower...'));
         }
       }
